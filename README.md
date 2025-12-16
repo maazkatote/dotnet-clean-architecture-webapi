@@ -56,3 +56,5 @@ The solution follows **Clean Architecture principles**, ensuring separation of c
 
 
 ## 📁 Project Structure
+
+EmployeeManagementSystem │ ├── EmployeeManagement.API │ └── Controllers │ ├── EmployeeManagement.Application │ ├── DTOs │ ├── Interfaces │ └── Services │ ├── EmployeeManagement.Domain │ ├── Entities │ └── Interfaces │ ├── EmployeeManagement.Infrastructure │ └── Repositories │ └── database ├── tables ├── stored-procedures └
