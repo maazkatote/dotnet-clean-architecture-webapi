@@ -42,3 +42,17 @@ This repository is intended as a **portfolio-quality reference project** for sen
 
 
 The solution follows **Clean Architecture principles**, ensuring separation of concerns and long-term maintainability.
+
+### Layer Responsibilities
+
+
+- **Domain**: Core business entities and repository contracts
+- **Application**: Business logic, DTOs, and service abstractions
+- **Infrastructure**: SQL Server access, Dapper implementation, stored procedures
+- **API**: Controllers, request handling, dependency injection
+
+
+---
+
+
+## 📁 Project Structure
