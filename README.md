@@ -54,6 +54,25 @@ The solution follows **Clean Architecture principles**, ensuring separation of c
 
 ---
 
+## 🏗️ Clean Architecture Overview
+
+```mermaid
+flowchart TB
+
+Client[Client / Frontend] --> API[API Layer<br/>(Controllers, Middleware)]
+
+API --> Application[Application Layer<br/>(Use Cases, DTOs, Interfaces)]
+
+Application --> Domain[Domain Layer<br/>(Entities, Value Objects, Business Rules)]
+
+Infrastructure[Infrastructure Layer<br/>(EF Core, Repositories, Auth, External Services)]
+Infrastructure --> Application
+
+Application --> Infrastructure
+
+Domain -->|No Dependencies| Domain
+
+
 
 ## 📁 Project Structure
 
