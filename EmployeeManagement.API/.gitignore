@@ -1,0 +1,21 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+
+## ASP.NET
+appsettings.Development.json
+appsettings.Production.json
+
+## Logs
+Logs/
+
+## Docker
+*.env
+
+## OS
+.vs/
+.vscode/
