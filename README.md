@@ -59,18 +59,18 @@ The solution follows **Clean Architecture principles**, ensuring separation of c
 ```mermaid
 flowchart TB
 
-Client[Client / Frontend] --> API[API Layer<br/>(Controllers, Middleware)]
+Client["Client / Frontend"]
+API["API Layer\nControllers, Middleware"]
+Application["Application Layer\nUse Cases, DTOs, Interfaces"]
+Domain["Domain Layer\nEntities, Value Objects, Business Rules"]
+Infrastructure["Infrastructure Layer\nEF Core, Repositories, Auth, External Services"]
 
-API --> Application[Application Layer<br/>(Use Cases, DTOs, Interfaces)]
-
-Application --> Domain[Domain Layer<br/>(Entities, Value Objects, Business Rules)]
-
-Infrastructure[Infrastructure Layer<br/>(EF Core, Repositories, Auth, External Services)]
+Client --> API
+API --> Application
+Application --> Domain
+Application --> Infrastructure
 Infrastructure --> Application
 
-Application --> Infrastructure
-
-Domain -->|No Dependencies| Domain
 
 
 
