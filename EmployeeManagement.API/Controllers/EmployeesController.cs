@@ -22,6 +22,7 @@ namespace EmployeeManagement.API.Controllers
         [HttpGet("/GetAllEmployee")]
         public async Task<IActionResult> Get()
         {
+            //get employee
             return Ok(await _service.GetAllAsync());
         }
 
